@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">移动软件开发与安全作业</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">打卡</string>
+    <string name="string_item_name">12</string>
+    <string name="string_item_price">21</string>
+    <string name="string_ok">确定</string>
+</resources>
