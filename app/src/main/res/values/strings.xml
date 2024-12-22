@@ -2,8 +2,7 @@
     <string name="app_name">移动软件开发与安全作业</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">打卡</string>
-    <string name="string_item_name">12</string>
-    <string name="string_item_price">21</string>
-    <string name="string_ok">确定</string>
+
+    <string name="view_name1">Hello_World</string>
+    <string name="view_name2">Hello_Jnu</string>
 </resources>
