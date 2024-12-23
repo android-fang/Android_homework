@@ -22,9 +22,8 @@
         android:theme="@style/Theme.Experiment2024"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <activity
-            android:name=".ShopItemDetailsActivity"
-            android:exported="false" />
+
+
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -40,8 +39,18 @@
             android:name="TencentMapSDK"
             android:value="2GMBZ-JRQ6L-EN2PL-MX7VE-KGZSF-GCBLN" />
 
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
         <activity
-            android:name=".MainActivity"
+            android:name=".ImageViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,6 +58,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

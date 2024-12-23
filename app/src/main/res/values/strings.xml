@@ -2,7 +2,8 @@
     <string name="app_name">移动软件开发与安全作业</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-
+    <string name="next">下一个</string>
+    <string name="previous">上一个</string>
     <string name="view_name1">Hello_World</string>
     <string name="view_name2">Hello_Jnu</string>
 </resources>
