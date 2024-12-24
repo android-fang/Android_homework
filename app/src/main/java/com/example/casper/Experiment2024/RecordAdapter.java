@@ -1,5 +1,6 @@
 package com.example.casper.Experiment2024;
 
+import android.net.Uri;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +25,7 @@ public class RecordAdapter extends RecyclerView.Adapter<RecordAdapter.ViewHolder
         private final TextView commentView;
         private final ImageView imageView;
 
+
         public ViewHolder(View shopItemView) {
             super(shopItemView);
 
@@ -45,6 +47,8 @@ public class RecordAdapter extends RecyclerView.Adapter<RecordAdapter.ViewHolder
         public ImageView getImageView() {
             return imageView;
         }
+
+
 
 
         public void onCreateContextMenu(ContextMenu menu, View v,
