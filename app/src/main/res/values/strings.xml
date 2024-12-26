@@ -10,6 +10,4 @@
     <string name="record_comment">心得</string>
     <string name="string_add_ok">确定添加</string>
     <string name="string_add_image">添加图片</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
