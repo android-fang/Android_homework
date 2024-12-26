@@ -11,6 +11,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link WeatherFragment#newInstance} factory method to
