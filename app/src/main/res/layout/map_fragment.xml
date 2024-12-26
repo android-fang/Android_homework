@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tencent.tencentmap.mapsdk.maps.TextureMapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:longClickable="true" >
+
+        <Button
+            android:id="@+id/mapButtonLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text="左移"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/mapButtonRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:text="右移"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/mapButtonUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:text="上移"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/mapButtonDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="550dp"
+            android:text="下移"
+            android:textSize="30dp" />
+    </com.tencent.tencentmap.mapsdk.maps.TextureMapView>
+
+
+
+
+</LinearLayout>

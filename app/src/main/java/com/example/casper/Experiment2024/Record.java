@@ -5,7 +5,9 @@ import android.media.Image;
 import android.net.Uri;
 import android.widget.ImageView;
 
-public class Record {
+import java.io.Serializable;
+
+public class Record implements Serializable {
     private String date;
     private Bitmap image;
     private String comments;
