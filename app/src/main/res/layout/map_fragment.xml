@@ -11,7 +11,7 @@
 
         android:longClickable="true" >
 
-        <Button
+<!--         <Button
             android:id="@+id/mapButtonLeft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="550dp"
             android:text="下移"
-            android:textSize="30dp" />
+            android:textSize="30dp" />  -->
     </com.tencent.tencentmap.mapsdk.maps.TextureMapView>
 
 
