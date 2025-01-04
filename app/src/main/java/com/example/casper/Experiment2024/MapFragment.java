@@ -80,82 +80,82 @@ public class MapFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.map_fragment, container, false);
         mapView = rootView.findViewById(R.id.mapView);
 
-        Pos=new SparkPosBank().LoadPos(requireActivity());
-        for (int i = 0; i < Pos.size(); i++) {
-            addMarker(Pos.get(i).getLatLng());
-        }
+//        Pos=new SparkPosBank().LoadPos(requireActivity());
+//        for (int i = 0; i < Pos.size(); i++) {
+//            addMarker(Pos.get(i).getLatLng());
+//        }
         tencentMap= mapView.getMap();
-
-
-        // 设置地图点击监听器
-        tencentMap.setOnMapClickListener(new TencentMap.OnMapClickListener() {
-            @Override
-            public void onMapClick(LatLng latLng) {
-                // 在这里处理点击事件，latLng是点击位置的经纬度
-                clickPos=latLng;
-
-
-                // 你可以在这里添加自定义逻辑，比如显示标记、弹出对话框等
-            }
-        });
-
-        // Set long click listener
-        tencentMap.setOnMapLongClickListener(new TencentMap.OnMapLongClickListener() {
-            @Override
-            public void onMapLongClick(LatLng latLng) {
-
-                showOptionsMenu(clickPos);
-
-            }
-        });
-
-        Button mapButtonLeft=rootView.findViewById(R.id.mapButtonLeft);
-        mapButtonLeft.setOnClickListener(v ->
-        {
-
-            //设置一个新的地图中心点标注
-            LatLng newLatLng = tencentMap.getCameraPosition().target;
-
-            newLatLng.longitude -=0.02;
-            //把地图变换到指定的状态,生成一个把地图移动到指定的经纬度到屏幕中心的状态变化对象
-            tencentMap.moveCamera(CameraUpdateFactory.newLatLng(newLatLng));
-        });
-
-        Button mapButtonRight=rootView.findViewById(R.id.mapButtonRight);
-        mapButtonRight.setOnClickListener(v ->
-        {
-
-            //设置一个新的地图中心点标注
-            LatLng newLatLng = tencentMap.getCameraPosition().target;
-
-            newLatLng.longitude +=0.02;
-            //把地图变换到指定的状态,生成一个把地图移动到指定的经纬度到屏幕中心的状态变化对象
-            tencentMap.moveCamera(CameraUpdateFactory.newLatLng(newLatLng));
-        });
-
-        Button mapButtonUp=rootView.findViewById(R.id.mapButtonUp);
-        mapButtonUp.setOnClickListener(v ->
-        {
-
-            //设置一个新的地图中心点标注
-            LatLng newLatLng = tencentMap.getCameraPosition().target;
-
-            newLatLng.latitude +=0.02;
-            //把地图变换到指定的状态,生成一个把地图移动到指定的经纬度到屏幕中心的状态变化对象
-            tencentMap.moveCamera(CameraUpdateFactory.newLatLng(newLatLng));
-        });
-
-        Button mapButtonDown=rootView.findViewById(R.id.mapButtonDown);
-        mapButtonDown.setOnClickListener(v ->
-        {
-
-            //设置一个新的地图中心点标注
-            LatLng newLatLng = tencentMap.getCameraPosition().target;
-
-            newLatLng.latitude -=0.02;
-            //把地图变换到指定的状态,生成一个把地图移动到指定的经纬度到屏幕中心的状态变化对象
-            tencentMap.moveCamera(CameraUpdateFactory.newLatLng(newLatLng));
-        });
+//
+//
+//        // 设置地图点击监听器
+//        tencentMap.setOnMapClickListener(new TencentMap.OnMapClickListener() {
+//            @Override
+//            public void onMapClick(LatLng latLng) {
+//                // 在这里处理点击事件，latLng是点击位置的经纬度
+//                clickPos=latLng;
+//
+//
+//                // 你可以在这里添加自定义逻辑，比如显示标记、弹出对话框等
+//            }
+//        });
+//
+//        // Set long click listener
+//        tencentMap.setOnMapLongClickListener(new TencentMap.OnMapLongClickListener() {
+//            @Override
+//            public void onMapLongClick(LatLng latLng) {
+//
+//                showOptionsMenu(clickPos);
+//
+//            }
+//        });
+//
+//        Button mapButtonLeft=rootView.findViewById(R.id.mapButtonLeft);
+//        mapButtonLeft.setOnClickListener(v ->
+//        {
+//
+//            //设置一个新的地图中心点标注
+//            LatLng newLatLng = tencentMap.getCameraPosition().target;
+//
+//            newLatLng.longitude -=0.02;
+//            //把地图变换到指定的状态,生成一个把地图移动到指定的经纬度到屏幕中心的状态变化对象
+//            tencentMap.moveCamera(CameraUpdateFactory.newLatLng(newLatLng));
+//        });
+//
+//        Button mapButtonRight=rootView.findViewById(R.id.mapButtonRight);
+//        mapButtonRight.setOnClickListener(v ->
+//        {
+//
+//            //设置一个新的地图中心点标注
+//            LatLng newLatLng = tencentMap.getCameraPosition().target;
+//
+//            newLatLng.longitude +=0.02;
+//            //把地图变换到指定的状态,生成一个把地图移动到指定的经纬度到屏幕中心的状态变化对象
+//            tencentMap.moveCamera(CameraUpdateFactory.newLatLng(newLatLng));
+//        });
+//
+//        Button mapButtonUp=rootView.findViewById(R.id.mapButtonUp);
+//        mapButtonUp.setOnClickListener(v ->
+//        {
+//
+//            //设置一个新的地图中心点标注
+//            LatLng newLatLng = tencentMap.getCameraPosition().target;
+//
+//            newLatLng.latitude +=0.02;
+//            //把地图变换到指定的状态,生成一个把地图移动到指定的经纬度到屏幕中心的状态变化对象
+//            tencentMap.moveCamera(CameraUpdateFactory.newLatLng(newLatLng));
+//        });
+//
+//        Button mapButtonDown=rootView.findViewById(R.id.mapButtonDown);
+//        mapButtonDown.setOnClickListener(v ->
+//        {
+//
+//            //设置一个新的地图中心点标注
+//            LatLng newLatLng = tencentMap.getCameraPosition().target;
+//
+//            newLatLng.latitude -=0.02;
+//            //把地图变换到指定的状态,生成一个把地图移动到指定的经纬度到屏幕中心的状态变化对象
+//            tencentMap.moveCamera(CameraUpdateFactory.newLatLng(newLatLng));
+//        });
 
 
         LatLng point1 = new LatLng(22.255453, 113.54145);
@@ -195,54 +195,54 @@ public class MapFragment extends Fragment {
 
 
 
-    private void showOptionsMenu(LatLng pos) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        builder.setTitle("选择操作")
-                .setItems(new String[]{"点亮", "取消"}, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        switch (which) {
-                            case 0: // 点亮
-                                addMarker(pos);
-                                break;
-                            case 1: // 取消
-                                removeMarker(pos);
-                                break;
+//    private void showOptionsMenu(LatLng pos) {
+//        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+//        builder.setTitle("选择操作")
+//                .setItems(new String[]{"点亮", "取消"}, new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        switch (which) {
+//                            case 0: // 点亮
+//                                addMarker(pos);
+//                                break;
+//                            case 1: // 取消
+//                                removeMarker(pos);
+//                                break;
+//
+//
+//                        }
+//                    }
+//                });
+//        builder.show();
+//    }
 
-
-                        }
-                    }
-                });
-        builder.show();
-    }
-
-    private Map<LatLng, Marker> markers = new HashMap<>();
-
-    private void addMarker(LatLng latLng) {
-        if (!markers.containsKey(latLng)) {
-            MarkerOptions markerOptions = new MarkerOptions()
-                    .position(latLng)
-                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.qiqiu)); // 替换为你的标记图片
-            Marker marker = tencentMap.addMarker(markerOptions);
-            markers.put(latLng, marker);
-            new SparkPosBank().SavePos(getActivity(),Pos);
-        }
-    }
-
-    private void removeMarker(LatLng latLng) {
-        Marker marker = markers.remove(latLng);
-        if (marker != null) {
-            marker.remove();
-            for (int i = 0; i < Pos.size(); i++) {
-                if(Pos.get(i).getLatLng()==latLng)
-                {
-                    Pos.remove(i);
-                    return;
-                }
-            }
-
-            new SparkPosBank().SavePos(getActivity(),Pos);
-        }
-    }
+//    private Map<LatLng, Marker> markers = new HashMap<>();
+//
+//    private void addMarker(LatLng latLng) {
+//        if (!markers.containsKey(latLng)) {
+//            MarkerOptions markerOptions = new MarkerOptions()
+//                    .position(latLng)
+//                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.qiqiu)); // 替换为你的标记图片
+//            Marker marker = tencentMap.addMarker(markerOptions);
+//            markers.put(latLng, marker);
+//            new SparkPosBank().SavePos(getActivity(),Pos);
+//        }
+//    }
+//
+//    private void removeMarker(LatLng latLng) {
+//        Marker marker = markers.remove(latLng);
+//        if (marker != null) {
+//            marker.remove();
+//            for (int i = 0; i < Pos.size(); i++) {
+//                if(Pos.get(i).getLatLng()==latLng)
+//                {
+//                    Pos.remove(i);
+//                    return;
+//                }
+//            }
+//
+//            new SparkPosBank().SavePos(getActivity(),Pos);
+//        }
+//    }
 
 
 }
